@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Table with Links</title>
+    <style>
+        body {
+            background: url('city.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid white;
+            text-align: center;
+        }
+        th {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Marquee effect using CSS */
+        .marquee {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f39c12;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .marquee span {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Marquee effect using CSS -->
+        <h1 class="marquee"><span>Arsen et Mystica</span></h1>
+
+        <h2>Table content</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>L.O.1</td>
+                <td><a href="apply.html" target="_blank">Apply Keyboard Skills</a></td>
+            </tr>
+            <tr>
+                <td>L.O.1</td>
+                <td><a href="pro.html" target="_blank">Creating Web Structures</a></td>
+            </tr>
+            <tr>
+                <td>L.O.3</td>
+                <td><a href="fnl.html" target="_blank">Styling Web Elements</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

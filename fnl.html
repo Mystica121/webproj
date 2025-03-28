@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to style web elements effectively using CSS.">
+    <meta name="keywords" content="CSS, Typography, Media Queries, Web Design">
+    <title>Learning Outcome 3: Styling Web Elements</title>
+    <style>
+        /* Global styles for the webpage */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Container for content */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styles */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Typography styles for paragraphs and headings */
+        h2, h3 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.8;
+        }
+
+        .text-example {
+            font-size: 1.2em;
+            font-weight: 300;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        /* Styling for the example box to show media query changes */
+        .example-box {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+
+        /* Link styles */
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            /* Layout changes for smaller screens */
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            h2, h3 {
+                font-size: 1.5em;
+            }
+
+            .example-box {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Further adjustments for even smaller screens */
+            h2, h3 {
+                font-size: 1.2em;
+            }
+
+            .text-example {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Learning Outcome 3: Styling Web Elements</h1>
+
+        <!-- Section 3.1 - CSS File Efficiently Created -->
+        <h2>3.1 Creating an Efficient CSS File</h2>
+        <p>The CSS file for this project is structured to maintain a clear and organized styling structure. Here is how you can create and link an efficient CSS file:</p>
+        <code>
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+        </code>
+
+        <!-- Section 3.2 - Typography Defined -->
+        <h2>3.2 Typography Clearly Defined</h2>
+        <p>Typography is important for readability and accessibility. We will define heading and paragraph styles using the correct font family, size, and line spacing:</p>
+        <p class="text-example">This is a sample paragraph styled using the typography rules defined in CSS. It provides clear readability and fits the project's goals.</p>
+
+        <h3>Typography Example</h3>
+        <p>Headings should be clear and easy to read. For instance:</p>
+        <h2>Headings are styled using this CSS rule</h2>
+
+        <!-- Section 3.3 - Media Query Rules -->
+        <h2>3.3 Media Query Rules</h2>
+        <p>We will use media queries to make the website responsive to different screen sizes. For example, the layout of this page changes depending on the screen width:</p>
+        <div class="example-box">Resize the browser window to see how the layout changes.</div>
+
+        <!-- Links to other pages -->
+        <h2>Related Pages</h2>
+        <ul>
+            <li><a href="VISUALROLES.html" target="_blank">Visual Roles</a></li>
+            <li><a href="MEDIATAG.html" target="_blank">Media Tag</a></li>
+            <li><a href="LISTTAG.html" target="_blank">List Tag</a></li>
+            <li><a href="GROUPINGTAGS.html" target="_blank">Grouping Tags</a></li>
+            <li><a href="FORMATTINGTAG.html" target="_blank">Formatting Tag</a></li>
+            <li><a href="BOXMODELTAG.html" target="_blank">Box Model Tag</a></li>
+        </ul>
+    </div>
+</body>
+</html>
